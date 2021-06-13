@@ -132,43 +132,63 @@
 <article class="card card-content">
   <header>
     <h1 class="post-title">
-      Hello World
+      bear's 碎碎念
     </h1>
   </header>
   <div class="post-meta post-show-meta">
-    <time datetime="2021-06-13T19:31:22.205Z" style="display: flex; align-items: center;">
+    <time datetime="2021-06-13T19:55:51.000Z" style="display: flex; align-items: center;">
       <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
       <span>2021-06-14</span>
     </time>
     
     
     <span class="dot"></span>
-    <span>75 words</span>
+    <span>1.4k words</span>
     
   </div>
   
   </header>
   <div id="section" class="post-content">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="highlight"><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="highlight"><span class="line">$ hexo server</span><br></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="highlight"><span class="line">$ hexo generate</span><br></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="highlight"><span class="line">$ hexo deploy</span><br></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <p>写这篇文章的起因是因为我的好朋友小冰冰最近面试不顺，所以帮她总结一下我眼中成熟的java 后台工程师应该具备的技能和需要看的书。顺便给自己新开的github开个张~</p>
+<h2 id="如何快速准备面试"><a href="#如何快速准备面试" class="headerlink" title="如何快速准备面试"></a>如何快速准备面试</h2><p> 其实，个人感觉面试那段时间其实是最后的冲刺了，其实是需要平时就进行拓展阅读，对技术有一定的理解，面试的时候才能针对面试官的提问进行深层次的回答。<br>当然，如果拓展的少，需要快速恶补，可以在github上找一些面试指南来进行恶补。个人建议参考博客：<a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide%EF%BC%8C%E8%BF%99%E4%B8%AA%E6%9C%AC%E8%BA%AB%E5%B0%B1%E6%98%AF%E4%B8%93%E9%97%A8%E4%B8%BA%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E8%80%8C%E5%86%99%E7%9A%84%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%85%88%E6%8A%8A%E6%89%80%E6%9C%89%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AE%B0%E4%B8%8B%E6%9D%A5%EF%BC%8C%E7%84%B6%E5%90%8E%E5%86%8D%E6%A0%B9%E6%8D%AE%E7%BB%93%E5%90%88%E8%87%AA%E5%B7%B1%E7%9A%84%E9%A1%B9%E7%9B%AE%E5%92%8C%E5%AE%9E%E9%99%85%E6%83%85%E5%86%B5%E6%9D%A5%E8%BF%9B%E8%A1%8C%E6%8B%93%E5%B1%95%EF%BC%8C%E4%B8%AA%E4%BA%BA%E6%84%9F%E8%A7%89%E5%8F%AF%E4%BB%A5%E6%8C%89%E7%85%A7%E4%BB%A5%E4%B8%8B%E5%87%A0%E7%82%B9%E6%9D%A5%E5%87%86%E5%A4%87">https://github.com/Snailclimb/JavaGuide，这个本身就是专门为技术面试而写的，可以先把所有的知识点记下来，然后再根据结合自己的项目和实际情况来进行拓展，个人感觉可以按照以下几点来准备</a>(以redis 为例)：</p>
+<ul>
+<li> redis 最新版本中发布的最新特性</li>
+<li>redis 的单机、集群、哨兵、cluster模式的演化,为了解决什么问题，以及实际过程中的具体实现（请背熟所在公司的redis 架构）</li>
+<li>因为redis 属于缓存，所以可以拓展看一下缓存的相关知识点，推荐<a target="_blank" rel="noopener" href="https://item.jd.com/12276070.html">深入分布式缓存：从原理到实践
+</a></li>
+</ul>
+<p>以上是基本操作，推荐一波我感觉非常棒的书和博客<br>##java 基础<br>   这个看《JAVA 卷1》和《JAVA 卷2》即可<br>##Java进阶<br>  主要是和并发编程相关的，以及建议积累一下JAVA 性能调优相关的知识</p>
+<ul>
+<li>并发编程推荐书单<br>《JAVA 并发编程实战》 JAVA 并发入门书籍，强推<br>《实战JAVA 高并发程序设计》这本书开头对JAVA 并发的一些概念进行了总结，个人感觉《JAVA 并发编程实战》有些概念可能因为翻译问题不那么好懂</li>
+<li>JAVA 线上异常处理<br>主要是希望对JAVA 程序下经常出现的一些异常有一些积累，比如oom、jvm 一直full gc该如何排查问题。其实一般只需要知道发现异常后如何快速保存现场，然后用对应的工具进行分析即可。</li>
+<li>JAVA 性能调优<br>这个其实是一个很大的概念，推荐一个专栏<a target="_blank" rel="noopener" href="https://time.geekbang.org/column/article/102619">Java性能调优实战
+</a><br>当然，这块也有一些佛脚也可以报一下，下面我介绍一下入门级概。首先需要知道其实在Java web的性能调优分为5块了：</li>
+</ul>
+<ol>
+<li>接口调优 这块主要是对接口的性能进行优化，常用技术包括：a.降低报文的大小 b.加缓存 c.调小对下游超时时间 d.改串行为并行 （包括采用并发、使用消息解耦同步操作为异步等做法）e.对并发程序的优化，包括减少锁的竞争，降低锁的力度等等 </li>
+<li>JVM 调优 GC时会stop了world,频繁的gc必然影响程序的运行，所以对参数进行合理的调整也可以带来性能的提升。</li>
+<li>存储调优 包括对使用的缓存和mysql的调优 比如redis，不推荐使用大key大value(目前很多地方使用的redis单进程，使用大key 大value很容易导致慢查询！)mysql则包括sql慢查询、分库分表等 </li>
+<li>服务器+网关等调优 服务器级别的调优理解不深…推荐一本书《性能之巅》（我还在研究中）服务器级别的性能调优，可以了解Linux自带的perf指令<br>不过其实这里一般是就是简单粗暴答++++机器也就够了</li>
+<li>架构调优 </li>
+</ol>
+<p>##jvm<br>这个不用说了《深入理解Java虚拟机：JVM高级特性与最佳实践》人手一本了，个人感觉重点在这里:</p>
+<ul>
+<li>JVM 基础知识</li>
+<li>jvm 对JAVA 并发的支持（Java中有些锁是依赖jvm实现的，这个必须清楚）</li>
+<li>jvm 调优<br>##Java web<br>dubbo 其实没啥可说的，就是dubbo的常用参数、架构等必须知道<br>##中间件相关<br>消息队列<br>研发还是建议对kafka、rabbit qmq等有一些了解，不要只局限在自研的mq上<br>##数据库相关<br>##redis 相关<br><a target="_blank" rel="noopener" href="https://item.jd.com/12121730.html">Redis 开发与运维
+</a><br>个人感觉这本书把redis讲的比较清楚，看完基本上就懂redis了<br>此外 redis 实现消息队列、分布式锁建议手写一下<br>##数据库</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://item.jd.com/11220393.html">高性能MySQL
+</a>  这本书讲的很全面，但是目测看不完<br>这个专栏强推：<br><a target="_blank" rel="noopener" href="https://time.geekbang.org/column/article/0?cid=100020801">MySQL实战45讲</a><br>研发比如对sql语句调优、索引、数据库事务（MVCC）、分布式数据库有理解</p>
+<h2 id="架构设计相关"><a href="#架构设计相关" class="headerlink" title="架构设计相关"></a>架构设计相关</h2><p>是滴….小qa也有一颗想review架构的梦想….ヾ(◍°∇°◍)ﾉﾞ<br><a target="_blank" rel="noopener" href="https://item.jd.com/13184550.html">大型网站系统与Java中间件实践</a>  这本书不错，但是看得时间太久了，有点忘记讲了什么了</p>
+<p>以上聊了这么多，都是rd相关的，作为一名qa，也推荐一些我感觉在测试方面不错的书<br>##精准测试<br> 《不测的秘密，精准测试之路》<br>精准测试是依然是目前测试工作中最有价值的研究方向之一，这本书写了腾讯在这方面的一些实战，可以拓展一下视野<br><a target="_blank" rel="noopener" href="https://e.jd.com/30402411.html?ebook=1">https://e.jd.com/30402411.html?ebook=1</a><br>##性能测试<br>推荐极客时间的一个专栏：<br><a target="_blank" rel="noopener" href="https://time.geekbang.org/column/article/0?cid=100042501">性能测试实战30讲</a></p>
 
   </div>
   <div>
   
   <div class="post-note note-warning copyright" style="margin-top: 42px">
     <p><span style="font-weight: bold;">作者：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/about">theme-kaze</a></p>
-    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/2021/06/14/hello-world/">http://example.com/2021/06/14/hello-world/</a></p>
+    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/2021/06/14/bear-s-%E7%A2%8E%E7%A2%8E%E5%BF%B5/">http://example.com/2021/06/14/bear-s-%E7%A2%8E%E7%A2%8E%E5%BF%B5/</a></p>
     <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
   </div>
   
@@ -176,24 +196,24 @@
 </article>
 <div class="nav">
   
-  <div class="nav-item-prev">
-    <a href="/2021/06/14/bear-s-碎碎念/" class="nav-link">
-      <i class="iconfont icon-left nav-prev-icon"></i>
+  
+  <div class="nav-item-next">
+    <a href="/2021/06/14/hello-world/" class="nav-link">
       <div>
-        <div class="nav-label">Prev</div>
+        <div class="nav-label">Next</div>
         
-        <div class="nav-title">bear&#39;s 碎碎念 </div>
+        <div class="nav-title">Hello World </div>
         
       </div>
+      <i class="iconfont icon-right nav-next-icon"></i>
     </a>
   </div>
-  
   
 </div>
 
 <div class="card card-content toc-card" id="mobiletoc">
   <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>TOC</div>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%87%86%E5%A4%87%E9%9D%A2%E8%AF%95"><span class="toc-text">如何快速准备面试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3"><span class="toc-text">架构设计相关</span></a></li></ol>
 </div></main>
           <aside class="left-column">
             
@@ -226,7 +246,7 @@
   <article class="display-when-two-columns spacer">
     <div class="card card-content toc-card">
       <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>TOC</div>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%87%86%E5%A4%87%E9%9D%A2%E8%AF%95"><span class="toc-text">如何快速准备面试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3"><span class="toc-text">架构设计相关</span></a></li></ol>
     </div>
   </article>
   
@@ -258,7 +278,7 @@
   
   <article class="card card-content toc-card">
     <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>TOC</div>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%87%86%E5%A4%87%E9%9D%A2%E8%AF%95"><span class="toc-text">如何快速准备面试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3"><span class="toc-text">架构设计相关</span></a></li></ol>
   </article>
   
   
